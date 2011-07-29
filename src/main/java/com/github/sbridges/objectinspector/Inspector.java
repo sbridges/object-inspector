@@ -66,7 +66,7 @@ import javax.swing.tree.DefaultTreeModel;
  * fields, then when you display the fields in the inspector the new values
  * will be used.  </p> <p>
  *
- * At times the structor of an object will change.  For instance if you have
+ * At times the structure of an object will change.  For instance if you have
  * a Component field called comp, with a reference to a Button object when
  * the inspector window is created, then change comp to be a JButton, the
  * hierarchy of the inspector tree will change.  If this happens the inspector

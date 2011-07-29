@@ -1,4 +1,24 @@
 Object Inspector
-===============
+================
+
+The inspector is a simple Object inspector.  It allows you to inspect
+objects at runtime, seeing their public, protected and private variables.
+
+Generally you use Inspector.inspect(some object) or
+Inspector.inspectAndWait(some object).  The second method does not
+return until the inspector window is closed. You can also create an
+Inspector panel directly by creating a new Inspector instance.
+The inspector extends JPanel.
+
+The values that the inspector shows are created dynamically.  That is if you
+open an inspector window on an object, and change the values of the objects
+fields, then when you display the fields in the inspector the new values
+will be used.
+
+At times the structure of an object will change.  For instance if you have
+a Component field called comp, with a reference to a Button object when
+the inspector window is created, then change comp to be a JButton, the
+hierarchy of the inspector tree will change.  If this happens the inspector
+tree will collapse and refresh itself.
 
 
